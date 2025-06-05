@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+	<link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="style.css">
+	<meta name="theme-color" content="#f0c260">
+	<link rel="icon" href="icon_web.png">
+	<link rel="apple-touch-icon" href="icon_web.png">
+	<link rel="manifest" href="manifest.json">
+	<title>Long Electric</title>
+</head>
+<body>
+	
+	<nav class="pc">
+		<img title="Icon-Logn" src="icon_web.png" alt="Icon" class="icon">
+		<h3 onclick="inicio()">Inicio</h3>
+		<h3 onclick="proyectos()">Proyectos</h3>
+		<h3 onclick="con()">Contáctanos</h3>
+	</nav>
+
+	<nav class="movil">
+		<h3 onclick="inicio()"><i class='bx  bxs-home'  ></i></h3>
+		<h3 onclick="proyectos()"><i class="bx bxs-folder-star" ></i></h3>
+		<h3 onclick="con()"><i class='bx  bxs-message-bubble-detail'  ></i></h3>
+	</nav>
+
+
+	<main>
+		<div>
+			<h1>Long Electric</h1>
+			<p>Somos una empresa de alta calidad que ofrece lo mejor a nustros clientes. Con nuestros productos que ofrece las soluciones a los problemas de las comunidades</p>
+		</div>
+		<div>
+			<img src="https://cdn-icons-png.flaticon.com/512/6213/6213426.png" alt="Persona Feliz" class="image">
+		</div>
+	</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script>
+		// Registrar Service Worker
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(reg => console.log('✅ SW registrado', reg))
+        .catch(err => console.error('❌ SW error', err));
+    }
+	</script>
+	<script src="main.js"></script>
+</body>
+</html>

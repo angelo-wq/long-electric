@@ -1,0 +1,106 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	user-select: none;
+}
+
+body {
+	background: #333;
+	color: white;
+	font-family: sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+	background: #222;
+	border-radius: 0 0 20px 20px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	color: #f0c260;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	background: transparent;
+	border: 1px dashed white;
+	backdrop-filter: blur(4px);
+	padding: 35px;
+	border-radius: 30px;
+}
+
+input {
+	padding: 10px;
+	outline: none;
+	border-radius: 10px;
+	border: none;
+	background: #f0c260;
+	color: black;
+	font-size: 18px;
+}
+
+input::placeholder {
+	font-weight: bold;
+}
+
+button {
+	padding: 10px;
+	border-radius: 7px;
+	border: none;
+	background: white;
+	color: black;
+	cursor: pointer;
+	transition: all 1s ease;
+}
+
+i {
+	font-size: 24px;
+	cursor: pointer;
+}
+
+button:active {
+	transform: scale(0.8);
+	transition: all .2s ease-in;
+}
+
+
+
+
+main {
+	animation: entrada 1.5s ease-in;
+}
+@keyframes entrada {
+	0%{
+		transform: translateX(-90px) rotate3d(7, 5, 1, 45deg);
+	}
+	50% {
+		transform: translateX(-90px) rotate3d(5, 7, 1, -45deg);
+	}
+	100% {
+		transform: translateX(0) rotate3d(0, 0, 0, 0);
+	}
+
+	}
+
+
+header {
+	animation: cabeza 2.5s ease-in-out;
+}
+@keyframes cabeza {
+	0%{
+		transform: translateX(-5000px);
+	}
+	100%{
+		transform: translateX(0);
+	}
+}

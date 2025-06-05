@@ -1,0 +1,20 @@
+{
+  "name": "Long Electric",
+  "short_name": "Long Electric",
+  "theme_color": "#f0c260",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f0c260",
+  "icons": [
+    {
+      "src": "icon_web.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_web.png",
+      "sizes": "1920x1920",
+      "type": "image/png"
+    }
+  ]
+}

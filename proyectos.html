@@ -7,10 +7,96 @@
 	<link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
 	<link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
 	<link href='https://cdn.boxicons.com/fonts/animations.min.css' rel='stylesheet'>
-	<link rel="stylesheet" href="contacto.css">
 	<meta name="theme-color" content="#f0c260">
 	<link rel="icon" href="icon_web.png">
 	<title>Proyectos | LE</title>
+	<style>
+		* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	user-select: none;
+}
+
+body {
+	background: #333;
+	color: white;
+	font-family: sans-serif;
+}
+		header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+	background: #222;
+	border-radius: 0 0 20px 20px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	color: #f0c260;
+}
+button {
+	padding: 10px;
+	border-radius: 7px;
+	border: none;
+	background: white;
+	color: black;
+	cursor: pointer;
+	transition: all 1s ease;
+}
+
+i {
+	font-size: 24px;
+	cursor: pointer;
+}
+
+button:active {
+	transform: scale(0.8);
+	transition: all .2s ease-in;
+}
+
+header {
+	animation: cabeza 2.5s ease-in-out;
+}
+@keyframes cabeza {
+	0%{
+		transform: translateX(-5000px);
+	}
+	100%{
+		transform: translateX(0);
+	}
+}
+		main {
+			display: grid;
+			grid-template-columns: repeat(
+				auto-fit,
+				minmax(200px, 1fr)
+			);
+			width: 100%;
+			margin-top: 70px;
+			padding: 25px;
+		}
+		
+		img {
+			width: 30%;
+			border-radius: 30px;
+		}
+		.box {
+			width: 100%;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+		}
+
+		@media screen and (max-width: 600px) {
+			img {
+				width: 98%;
+			}
+		}
+	</style>
 </head>
 
 <body>
@@ -19,10 +105,20 @@
 		<h1>Proyectos</h1>
 	</header>
 
-	<h1>Aún no hay proyectos disponibles.</h1>
+	<main>
+		<div class="box">
+			<img src="projects/foto1.png" alt="Proyecto Alarma de seguridad" title="Alarma de Seguridad Proyecto">
+			<h3>Alarma De Seguridad</h3>
+			<button onclick="infoOne()" class="info">Información</button>
+		</div>
+	</main>
 
 
-
+	<script>
+		function infoOne() {
+			window.location.href = 'projects/uno.html'
+		}
+	</script>
 	<script src="contacto.js"></script>
 </body>
 

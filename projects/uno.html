@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+	<link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+	<link href='https://cdn.boxicons.com/fonts/animations.min.css' rel='stylesheet'>
+	<title>Alarma de Seguridad</title>
+	<style>
+		* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	user-select: none;
+}
+
+body {
+	background: #333;
+	color: white;
+	font-family: sans-serif;
+}
+		header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+	background: #222;
+	border-radius: 0 0 20px 20px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	color: #f0c260;
+}
+header {
+	animation: cabeza 2.5s ease-in-out;
+}
+@keyframes cabeza {
+	0%{
+		transform: translateX(-5000px);
+	}
+	100%{
+		transform: translateX(0);
+	}
+}
+i {
+	font-size: 24px;
+	cursor: pointer;
+}
+main {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			width: 100%;
+			margin-top: 70px;
+			padding: 25px;
+			gap: 20px;
+		}
+		div {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			align-items: center;
+			gap: 10px;
+		}
+		img {
+			width: 40%;
+			border-radius: 30px;
+		}
+
+
+		@media screen and (max-width: 600px) {
+			img {
+				width: 98%;
+				margin: auto;
+			}
+			main {
+				display: block;
+			}			
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<i onclick="back()" class="bx bxs-arrow-big-left-line bx-wiggle "></i>
+		<h1>Alarma</h1>
+	</header>
+	
+	<main>
+		<img src="foto1.png" alt="Alarma de seguridad">
+		<div>
+			<h1>🔒 Alarma Inteligente Antirrobos – Tu Guardia Silenciosa</h1>
+			<p>¿Cansado de salir de casa con miedo a que te roben?</p>
+			<p>¿Te gustaría tener una forma simple, práctica y sin complicaciones de proteger lo que más valoras?</p>
+			<p>Presentamos la nueva alarma antirrobos inteligente, un sistema diseñado para cuidar tu hogar, negocio o espacio personal sin necesidad de pagar sistemas caros ni complicarte con tecnología difícil. Esta alarma se activa al instante si alguien intenta abrir tu puerta sin permiso. Así de simple.</p>
+		</div>
+	</main>
+
+
+
+	<script>
+		function back() {
+			history.back();
+		}
+	</script>
+</body>
+</html>
